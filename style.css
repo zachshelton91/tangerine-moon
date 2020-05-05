@@ -8,10 +8,12 @@ deep orange - f56133
   border: none;
 }*/
 
-body, html {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+*,*:before,*:after {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
 }
 
 body {
@@ -31,14 +33,12 @@ body {
 .container {
     width: 900px;
     position: relative;
-    top: 112%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     align-items: center;
-    margin-bottom: 90px;
+    margin: 60px auto;
     background-color: #fff;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
     overflow-y: scroll;
+    border-radius: 12px;
 }
 
 .header {
@@ -46,7 +46,6 @@ body {
   margin: 0 auto;
   padding-top: 3%;
   position: relative;
-  /*align-items: center;*/
   text-align: center;
 }
 
@@ -63,11 +62,11 @@ body {
 }
 
 .content {
-  width: 750px;
-  margin: 0 auto;
-  padding-top: 40px;
+  margin: 40px auto 0 auto;
+  padding: 40px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .inline-photo {
@@ -115,7 +114,7 @@ form {
   padding: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 20px;
   color: #25336e;
   /*border: 1px solid #CCC;*/
   /*border-radius: 1em;*/
@@ -161,6 +160,7 @@ textarea {
 textarea {
   vertical-align: top;
   height: 8em;
+  resize: none;
 }
 
 .button {
@@ -197,8 +197,9 @@ input[placeholder] {
   padding-left: 5px;
 }
 
-/*https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form*/
-
+@media screen and (max-width:767px) {
+  
+}
 
 
 
